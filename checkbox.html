@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style media="screen">
+      .mr {
+        background: url("images/frame.svg");
+        width: 500px;
+        height: 500px;
+        display: inline-block;
+        background-size: cover;
+        background-position: 0 0;
+        animation: mr 1s steps(9) infinite paused;
+      }
+      @keyframes mr {
+        from { background-position: 0 0;}
+          to { background-position: 100% 0;}
+      }
+      @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+.box input[type="checkbox"]:checked ~ .mr {
+animation-play-state: running;
+}
+.box input[type="checkbox"]:checked ~ label {
+background: #0074bb;
+Box-shadow:0px 1px 0px #f00,0px -1px 0px #f00,1px 0px 0px #f00,-1px 0px 0px #f00;
+}
+.box input[type="checkbox"] {
+  display: none;
+}
+.box label {
+  font-family: 'Nanum Gothic', sans-serif;
+  display: flex;
+  width:400px;
+  height:100px;
+  font-size: 70px;
+  margin: 20px;
+  background:#0091EA;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.5rem;
+}
+    </style>
+  </head>
+  <body>
+
+    <div class="box">
+      <input type="checkbox" id="sample">
+      <label for="sample">кнопо4ка</label>
+      <div class="mr">
+      </div>
+    </div>
+
+  </body>
+</html>

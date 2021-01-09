@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>cat</title>
+    <style media="screen">
+    body {
+      background-color: blue;
+    }
+    @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+       h1 {
+         position: absolute;
+        font-family: 'Nanum Gothic', sans-serif;
+        width: auto;
+        top: 0%;
+        left: calc(50vw - 215px);
+        padding: 4px;
+        background-color: blue;
+       }
+       .all {
+         position: relative;
+         height: 60vw;
+         width: 60vw;
+         margin-left: calc(50vw - 30vw);
+       }
+       .clip {
+         mask: url(images/catmask.svg#cat);
+       }
+       .cat {
+         position: absolute;
+         background-image: url(images/cat.jpg);
+         background-size: cover;
+         height: 60vw;
+         width: 60vw;
+       }
+       .background {
+         position: absolute;
+         /* background-image: url(images/beach.jpg); */
+         background-size: cover;
+         background-position: right;
+         height: 60vw;
+         width: 60vw;
+       }
+       .kot img {
+         position: absolute;
+         width: 589px;
+         height: 594px;
+         top: -45%;
+    left: -20%;
+       }
+       .kot {
+         position: absolute;
+         width: 589px;
+         height: 400px;
+         left: calc(60vw - 294px);
+         top: calc(70vh - 294px);
+         overflow: hidden;
+         -webkit-clip-path: url(#clip);
+            clip-path: url(#clip);
+       }
+.lines1 {
+  position: relative;
+  width: 99vw;
+  height: 48vh;
+margin-bottom: 0.5%;
+  display: flex;
+  justify-content: space-between;
+}
+.square1 {
+  position: relative;
+  width: 49.5%;
+  height: 48vh;
+  margin: 0;
+  display: inline-block;
+  background-color: white;
+}
+.square2 {
+  position: relative;
+  height: 48vh;
+  width: 49.5%;
+  margin: 0;
+  display: inline-block;
+  background-color: black;
+}
+.lines2 {
+  position: relative;
+  width: 99vw;
+  height: 48vh;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+}
+.square3 {
+  position: relative;
+  height: 48vh;
+  width: 49.5%;
+  display: inline-block;
+
+  margin: 0;
+  background-color: black;
+}
+.square4 {
+  position: relative;
+  height: 48vh;
+  width: 49.5%;
+  display: inline-block;
+  margin: 0;
+  background-color: white;
+}
+svg {
+  position: absolute;
+  top: 20vw;
+  left: 40vw;
+}
+/* .bg {
+  position: absolute;
+  overflow: hidden;
+  top: 20vh;
+  left: calc(50vw - 30vw);
+  width: 60vw;
+  height: 65vh;
+  background-color: blue;
+} */
+.beachh {
+  position: absolute;
+  overflow: hidden;
+  top: 20vh;
+  left: calc(50vw - 30vw);
+  width: 60vw;
+  height: 65vh;
+  background-color: blue;
+  display: none;
+}
+.beachh img {
+  position: relative;
+  height: 65vh;
+  width: 60vw;
+  object-fit: cover;
+}
+.rus {
+  position: absolute;
+  overflow: hidden;
+  top: 20vh;
+  left: calc(50vw - 30vw);
+  width: 60vw;
+  height: 65vh;
+  display: none;
+}
+.rus img {
+  position: relative;
+  height: 65vh;
+  width: 60vw;
+  object-fit: cover;
+}
+.alps {
+  position: absolute;
+  overflow: hidden;
+  top: 20vh;
+  left: calc(50vw - 30vw);
+  width: 60vw;
+  height: 65vh;
+  display: none;
+}
+.alps img {
+  position: relative;
+  height: 65vh;
+  width: 60vw;
+  object-fit: cover;
+}
+.thai {
+  position: absolute;
+  overflow: hidden;
+  top: 20vh;
+  left: calc(50vw - 30vw);
+  width: 60vw;
+  height: 65vh;
+  display: none;
+}
+.thai img {
+  position: relative;
+  height: 65vh;
+  width: 60vw;
+  object-fit: cover;
+}
+.square1:hover ~ .rus {
+  display: block;
+}
+.square1:hover {
+  opacity: 0.7;
+}
+.square2:hover ~ .beachh {
+  display: block;
+}
+.square2:hover {
+  opacity: 0.7;
+}
+.square3:hover ~ .alps{
+  display: block;
+}
+.square3:hover {
+  opacity: 0.7;
+}
+.square4:hover ~ .thai {
+  display: block;
+}
+.square4:hover {
+  opacity: 0.7;
+}
+.square1 p {
+  position: absolute;
+ font-family: 'Nanum Gothic', sans-serif;
+ font-size: 3vw;
+ margin: 0;
+ height: auto;
+ width: auto;
+ top: 5%;
+ left: 4%;
+}
+.square2 p {
+  color: white;
+  position: absolute;
+ font-family: 'Nanum Gothic', sans-serif;
+ font-size: 3vw;
+ margin: 0;
+ height: auto;
+ width: auto;
+ top: 5%;
+ right: 4%;
+}
+.square3 p {
+  color: white;
+  position: absolute;
+ font-family: 'Nanum Gothic', sans-serif;
+ font-size: 3vw;
+ margin: 0;
+ height: auto;
+ width: auto;
+ bottom: 5%;
+ left: 4%;
+}
+.square4 p {
+  position: absolute;
+ font-family: 'Nanum Gothic', sans-serif;
+ font-size: 3vw;
+ margin: 0;
+ height: auto;
+ width: auto;
+ bottom: 5%;
+ right: 4%;
+}
+a {
+  color: black !important;
+  text-decoration: none;
+}
+a:visited {
+    color: black;
+   }
+    </style>
+  </head>
+  <body>
+
+    <div class="square1">
+      <p>Торжок</p>
+    </div>
+    <div class="square2">
+      <p>Мальдивы</p>
+    </div>
+    <div class="square3">
+      <p>Альпы</p>
+    </div>
+    <div class="square4">
+      <p>Тайланд</p>
+    </div>
+    <div class="beachh">
+<img src="images/beach.jpg" alt="">
+</div>
+<div class="rus">
+  <img src="images/tt.jpg" alt="">
+</div>
+
+
+<div class="beachh">
+<img src="images/beach.jpg" alt="">
+</div>
+
+<div class="alps">
+  <img src="images/alps.jpg" alt="">
+</div>
+
+<div class="thai">
+  <img src="images/thai.jpg" alt="">
+</div>
+
+<a href="checkbox.html"><h1>Отправь кошку отдохнуть</h1></a>
+
+<div class="kot">
+    <img src="images/cat.jpg" alt="">
+</div>
+
+<svg width="372" height="365" viewBox="0 0 372 365" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <clipPath id="clip">
+<path d="M26.5 39L62 23.5L67 8L78 1.5L83.5 21.5L99.5 27.5L109 45L133 53.5V49L138 42.5H147.5L159 49L169 66H189L239 78.5L269.5 98.5H284L313.5 90.5H344.5L347 77L352.5 62L367 68L371 90.5L367 117.5L352.5 140.5H363L371 161.5L363 179.5L341.5 193.5C325.333 199.667 294.6 214.5 301 224.5C319 254.1 304.833 309.5 295.5 333.5L275 356.5L252.5 364L222 360.5L195.5 349C190.833 343.667 180.6 332 177 328C172.5 323 176.5 308.5 191 312C245 332.4 258.167 302.833 258 285.5L246.5 264L222 252.5H181.5L134.5 246L106.5 231L82.5 203L62 194L38 182.5V159.5V130.5V109L19 91V68L1 39H26.5Z" fill="black" stroke="black"/>
+</clipPath>
+</svg>
+
+  </body>
+</html>

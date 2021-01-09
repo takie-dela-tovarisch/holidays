@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <style media="screen">
+      .circle {
+        position: absolute;
+        background-color: teal;
+        width: 9vw;
+        height: 9vw;
+        border-radius: 50%;
+        top: 0;
+        left: 0;
+        animation: circlepath 25s linear infinite;
+      }
+      @keyframes circlepath {
+0% {top: 0;}
+5% {top: calc(100vh - 9vw);
+    left: 10vw;}
+10% {top: 0;
+left: 20vw;}
+15% {top: calc(100vh - 9vw);
+left: 40vw;}
+20% {top: 0;
+left: 70vw;}
+25% {top: calc(50vh - 9vw);
+left: calc(100vw - 9vw)}
+30% {top: calc(100vh - 9vw);
+left: 60vw;}
+40% {top: 40vh;
+left: 0;}
+45% {
+  top: 0;
+  left: calc(50vw - 9vw)
+}
+50% {
+  top: calc(100vh - 9vw);
+  left: 60vw;
+}
+55% {
+  top: 0;
+  left: calc(90vw - 9vw);
+}
+60% {
+  top: calc(100vh - 9vw);
+  left: 80vw;
+}
+65% {
+  top: 0;
+left: 50vw;
+}
+70% {
+  top: calc(100vh - 9vw);
+  left: 20vw;
+}
+75% {
+  top: calc(50vh - 9vw);
+  left: 0;
+}
+80% {
+  top: 0;
+  left: 40vw;
+}
+85% {
+  top: calc(100vh - 9vw);
+  left: 60vw;
+}
+90% {
+  top: 0;
+  left: 70vw;
+}
+95% {
+  top: calc(100vh - 9vw);
+  left: 50vw;
+}
+      }
+    </style>
+  </head>
+  <body>
+    <a href="cat.html">
+  <div class="circle">
+  </div>
+  </a>
+  </body>
+</html>
